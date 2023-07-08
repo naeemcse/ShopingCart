@@ -35,7 +35,7 @@ body {
 
     color: var(--text-color);
 
-    background: var(--bg-color) ;
+    background: hsl(108, 60%, 68%) ; var(--bg-color) ;
 
 }
 
@@ -79,7 +79,7 @@ header {
     font-weight: 400;
 }
 .logo img{
-    width: 10%;
+    width: 20%;
     height: auto;
     border-radius: 50% ;
 }
@@ -89,6 +89,7 @@ header {
     color:greenyellow ;
     margin-right: 50% ;
    font-weight: 600 ;
+   
 }
 
 #cart-icon {
@@ -104,7 +105,7 @@ header {
     width: 300px;
     min-height: 100vh;
     padding: 20px;
-    background: var(--bg-color) ;
+    background: rgb(80, 186, 154); var(--bg-color) ;
 
     box-shadow: -2px 0 4px hsl(0 4% 15% 15% / 10%);
 
@@ -113,6 +114,10 @@ header {
 
 .cart.active {
     right: 0;
+}
+.close{
+    right: -100%;
+
 }
 
 .cart-title {
@@ -236,8 +241,13 @@ header {
 .shop {
 
     margin-top: 10px;
+    margin-right: 310px;    /* ei ta soraiya niya aslam card theke  */
+    
 }
 
+.nocard{
+    margin: auto ;
+}
 /* shop-content  */
 
 .shop-content {
@@ -250,19 +260,25 @@ header {
 
 .product-box {
     position: relative;
-    border: 10px solid #606C5D ;
-}
+    border: 25px solid #606C5D;
+    transition: border 0.5s;
+    border-radius: 5% ;
+  }
+  
+  .product-box:hover {
+    padding: 5px;
+    border: 1px solid red ; 
+  }
+  
 
-.product-box:hover {
-    padding: 10px;
-    border: 15px solid  #606C5D ;
-    transition: 0.4s;
-}
 
 .product-img {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+    border-radius: 5% ;
+   
+
 }
 
 .product-title {

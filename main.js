@@ -3,11 +3,14 @@
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#closeCart");
+const sectn = document.getElementById("sctn");
 
 // Open cart 
 cartIcon.onclick = () => {
 
     cart.classList.add("active");
+    sectn.classList.remove("nocard");
+
 };
 
 // Close cart 
@@ -16,6 +19,12 @@ closeCart.onclick = () => {
 
     console.log("Close cart clicked");
     cart.classList.remove("active");
+
+    cart.classList.add("close");
+    sectn.classList.add("nocard");
+
+
+
 };
 
 
